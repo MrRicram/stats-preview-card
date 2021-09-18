@@ -1,0 +1,74 @@
+@media only screen and (max-width: 64em) {
+    :root {
+        font-size: 12px;
+    }
+    section {
+      padding: 3em 4.5em 3em 3em;
+    }
+  }
+
+@media only screen and (max-width: 39em) {
+    body {
+        flex-direction: column;
+    }
+    
+    main {
+        flex-direction: column-reverse;
+        margin: 10px;
+        min-width: 200px;
+        margin-top: 5em;
+    }
+
+    section {
+        border-radius: 0 0 0.625rem 0.625rem;
+        padding: 3em;
+        width: 300px;
+
+        h1, .lead{
+            text-align: center;
+        }
+
+        .lead {
+            font-size: 1.1rem;
+            margin-bottom: 2em;
+            line-height: 1.75em;
+        }
+
+        .content {
+            margin-right: 0;
+        }
+
+        ul {
+            flex-direction: column;
+            align-items: center;
+
+            li {
+                margin-bottom: 2em;
+              }
+
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: 0.25em;
+            }
+
+            p {
+                font-size: 1.05rem;
+            }
+        }
+    }
+
+    .bg-image {
+        background: url(/images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 300px;
+        height: 220px;
+        border-radius: 0.625rem 0.625rem 0 0;
+    }
+
+    .attribution {
+        position: relative;
+        margin-top: 20px;
+    }
+} 

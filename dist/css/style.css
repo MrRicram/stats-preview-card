@@ -1,0 +1,217 @@
+html {
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.3;
+  background-color: #090b1a;
+  min-height: 100vh;
+}
+
+main {
+  z-index: 1;
+  margin: 1em;
+  min-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1b1938;
+  border-radius: 0.625rem 0 0 0.625rem;
+  padding: 5.85em 7em 5.85em 5.85em;
+  width: 570px;
+  min-width: 300px;
+}
+
+section h1 {
+  color: white;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75em;
+}
+
+section h1 span {
+  color: #aa5cdb;
+}
+
+section .content {
+  margin-right: 2em;
+}
+
+section .lead {
+  line-height: 1.5;
+  margin-bottom: 5em;
+}
+
+section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+section ul h2 {
+  color: white;
+  margin-bottom: 0.3em;
+}
+
+section ul p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.bg-image {
+  min-height: 10em;
+  width: 540px;
+  min-width: 200px;
+  background: url(/images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0.625rem 0.625rem 0;
+  overflow: hidden;
+}
+
+.overlay {
+  background: rgba(157, 0, 255, 0.42);
+  height: 100%;
+}
+
+.overlay-2 {
+  background: rgba(118, 52, 127, 0.24);
+  height: 100%;
+  mix-blend-mode: color-burn;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 0.75em;
+  margin-bottom: 10px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: bold;
+}
+
+.attribution a:hover {
+  color: #aa5cdb;
+}
+
+@media only screen and (max-width: 64em) {
+  :root {
+    font-size: 12px;
+  }
+  section {
+    padding: 3em 4.5em 3em 3em;
+  }
+}
+
+@media only screen and (max-width: 39em) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 10px;
+    min-width: 200px;
+    margin-top: 5em;
+  }
+  section {
+    border-radius: 0 0 0.625rem 0.625rem;
+    padding: 3em;
+    width: 300px;
+  }
+  section h1, section .lead {
+    text-align: center;
+  }
+  section .lead {
+    font-size: 1.1rem;
+    margin-bottom: 2em;
+    line-height: 1.75em;
+  }
+  section .content {
+    margin-right: 0;
+  }
+  section ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section ul li {
+    margin-bottom: 2em;
+  }
+  section ul h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.25em;
+  }
+  section ul p {
+    font-size: 1.05rem;
+  }
+  .bg-image {
+    background: url(/images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 220px;
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+  .attribution {
+    position: relative;
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
