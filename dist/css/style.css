@@ -103,7 +103,7 @@ p {
   min-height: 10em;
   width: 540px;
   min-width: 200px;
-  background: url(images/image-header-desktop.jpg);
+  background: url(../images/image-header-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0 0.625rem 0.625rem 0;
@@ -202,7 +202,7 @@ p {
     font-size: 1.05rem;
   }
   .bg-image {
-    background: url(images/image-header-mobile.jpg);
+    background: url(../images/image-header-mobile.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 300px;
